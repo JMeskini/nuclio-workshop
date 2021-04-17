@@ -16,7 +16,7 @@ const messageRouter = express.Router();
 
 messageRouter.get('/', messageController.index);
 messageRouter.post('/', messageController.createOne);
-messageRouter.post('/receiveMessage', messageController.receiveOne);
+//messageRouter.post('/receiveMessage', messageController.receiveOne);
 messageRouter.delete('/:id', messageController.deleteOne);
 
 appRouter.use('/message', messageRouter);
